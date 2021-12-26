@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+import environ
+env = environ.Env()
+environ.Env.read_env()
 
 from pathlib import Path
 
@@ -29,14 +32,14 @@ ALLOWED_HOSTS = []
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'telmangadimov1@gmail.com'
-EMAIL_HOST_PASSWORD = 'nbpmeoncbngxseto' #past the key or password app here
+EMAIL_HOST = env('smtp.gmail.com')
+EMAIL_HOST_USER = env('telmangadimov1@gmail.com')
+EMAIL_HOST_PASSWORD = env('nbpmeoncbngxseto')#past the key or password app here
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-# DEFAULT_FROM_EMAIL = 'telmangadimo2@gmail.com'
 
-# nbpmeoncbngxseto
+RECIPIENT_ADDRESS = env('telmangadimov2@gmail.com')
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
