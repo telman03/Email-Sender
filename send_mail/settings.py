@@ -41,7 +41,6 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')#past the key or password app here
 
 
-RECIPIENT_ADDRESS = env('telmangadimov2@gmail.com')
 
 
 INSTALLED_APPS = [
