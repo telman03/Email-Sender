@@ -1,0 +1,5 @@
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'telmangadimov1@gmail.com'
+EMAIL_HOST_PASSWORD = 'nbpmeoncbngxseto'
+
+SECRET_KEY = 'django-insecure-+w%tvq1jtletkcw2a)8ye3lz9y7=d&1g^8o&-@8^lw5do=a%m!'
