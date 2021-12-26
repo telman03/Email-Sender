@@ -33,10 +33,11 @@ ALLOWED_HOSTS = []
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = env('smtp.gmail.com')
-EMAIL_HOST_USER = env('telmangadimov1@gmail.com')
-EMAIL_HOST_PASSWORD = env('nbpmeoncbngxseto')#past the key or password app here
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+EMAIL_HOST_USER = env('telmangadimov1@gmail.com')
+EMAIL_HOST_PASSWORD = env('nbpmeoncbngxseto')#past the key or password app here
+
 
 RECIPIENT_ADDRESS = env('telmangadimov2@gmail.com')
 
