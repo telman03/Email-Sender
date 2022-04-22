@@ -1,7 +1,11 @@
-# Email-Sender
-Django Email Sender 
+# Django-Email-Sender
+Send email from Gmail Id in Django using HTML Template
 
-```
+## Pre-Requisites
+- Python 3.7
+- Pip
+- Git
+
 ## Steps to run:
 - Clone the project using the command "git clone https://github.com/sukanya-pai/Django-Email-Sender.git"
 - In PipFile, the dependencies are mentioned. It is recommended to run the app inside a virtual environment to avoid conflict of existing dependencies.
